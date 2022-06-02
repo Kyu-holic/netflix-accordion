@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif, "Noto Sans KR", sans-serif;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    left: 1.6em;
+    font-weight: 300;
+}
+
+a {
+    color: gainsboro;
+    text-decoration: none;
+}
+
+/* Netflix FAQ with jQuery */
+.faq {
+    height: 100vh;
+}
+
+.faq-inner {
+    width: 700px;
+    margin: auto;
+}
+
+.faq-inner h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.accordion {
+    font-size: 26px;
+}
+
+.title:after {
+    content: "\e9c5";
+    font-family: xeicon;
+    float: right;
+    margin-top: 5px;
+    transition: 0.3s;
+}
+
+.title.active:after {
+    transform: rotate(45deg);
+}
+
+.title,
+.content {
+    background-color: #303030;
+    padding: 10px 15px;
+    margin-bottom: 7px;
+}
+
+.title {
+    cursor: pointer;
+}
+
+.title.active {
+    background-color: #353b48;
+}
+
+.content {
+    display: none;
+}
+
+.newsletter {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.newsletter p {
+    font-size: 20px;
+}
+.newsletter div {
+    display: flex;
+}
+
+.newsletter div input[type="email"],
+.newsletter div button {
+    border: none;
+    outline: none;
+    height: 60px;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.newsletter div input[type="email"] {
+    flex: 3;
+}
+.newsletter div button {
+    background-color: #e84118;
+    color: #fff;
+    cursor: pointer;
+    flex: 1;
+}
+
+.newsletter div button:after {
+    content: "\e940";
+    font-family: xeicon;
+    font-size: 20px;
+    display: inline-block;
+    transform: translateY(2px);
+}
